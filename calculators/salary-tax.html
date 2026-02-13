@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary After Tax Calculator – EasyToolCalc</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Salary After Tax Calculator (South Africa)</h1>
+    <p>Calculate your take-home pay based on 2026 SARS tax rates.</p>
+  </header>
+
+  <main>
+    <section class="calculator">
+      <label for="gross">Gross Monthly Salary (R):</label><br>
+      <input type="number" id="gross" placeholder="e.g., 30000"><br><br>
+
+      <button onclick="calculateSalary()">Calculate Take-Home Pay</button>
+
+      <h2 id="result"></h2>
+      
+      <p><strong>Example:</strong> Enter R30,000 → Click Calculate → Shows monthly take-home after SARS tax & UIF deduction.</p>
+    </section>
+  </main>
+
+  <script src="../js/salary-tax.js"></script>
+</body>
+</html>

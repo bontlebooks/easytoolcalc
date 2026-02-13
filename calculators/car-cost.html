@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Running Cost Calculator – EasyToolCalc</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <h1>Car Running Cost Calculator (South Africa)</h1>
+  <p>Calculate monthly car costs: fuel, maintenance, insurance.</p>
+</header>
+<main>
+  <section class="calculator">
+    <label for="fuel">Monthly Fuel Cost (R):</label><br>
+    <input type="number" id="fuel"><br><br>
+
+    <label for="maintenance">Monthly Maintenance (R):</label><br>
+    <input type="number" id="maintenance"><br><br>
+
+    <label for="insurance">Monthly Insurance (R):</label><br>
+    <input type="number" id="insurance"><br><br>
+
+    <button onclick="calculateCarCost()">Calculate Total Cost</button>
+
+    <h2 id="result"></h2>
+
+    <p><strong>Example:</strong> Fuel R3000, Maintenance R800, Insurance R1200 → Click Calculate → Shows R5000/month</p>
+  </section>
+</main>
+<script src="../js/car-cost.js"></script>
+</body>
+</html>

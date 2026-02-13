@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inflation Impact Calculator – EasyToolCalc</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <h1>Inflation Impact Calculator (South Africa)</h1>
+  <p>See how inflation affects the value of your money over time.</p>
+</header>
+<main>
+  <section class="calculator">
+    <label for="amount">Current Amount (R):</label><br>
+    <input type="number" id="amount"><br><br>
+
+    <label for="years">Number of Years:</label><br>
+    <input type="number" id="years"><br><br>
+
+    <label for="inflation">Inflation Rate (% per year):</label><br>
+    <input type="number" id="inflation" value="6"><br><br>
+
+    <button onclick="calculateInflation()">Calculate Future Value</button>
+
+    <h2 id="result"></h2>
+
+    <p><strong>Example:</strong> R10,000 over 5 years at 6% inflation → Click Calculate → Shows effective value</p>
+  </section>
+</main>
+<script src="../js/inflation.js"></script>
+</body>
+</html>
